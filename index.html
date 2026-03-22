@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Solar system </title>
+        <script>
+            alert("Welcome to the solar system")
+        </script>
+        <style>
+             body{
+        background-color: #000000;
+        font-size:17px;
+        color: rgb(255, 255, 255);
+        margin: 10px;
+         padding : 10px;
+    }
+    p{
+        font-style:italic;
+    }
+    table{
+        border-collapse:collapse;
+        margin-bottom:20px;
+    }
+    table, th, td{
+        border:1px solid rgb(255, 255, 255);
+        padding:8px;
+        text-align:center;
+    }
+        .solar-system {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            margin-top: 50px ;
+        }
+
+        /* 🌟 Stars */
+        .stars {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .star {
+            position: absolute;
+            background: rgb(255, 255, 255);
+            border-radius: 50%;
+            animation: twinkle infinite alternate;
+        }
+
+        @keyframes twinkle {
+            from { opacity: 0.2; }
+            to { opacity: 1; }
+        }
+
+        /* ☄️ Meteoroids */
+        .meteor {
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            background: rgb(255, 255, 255);
+            box-shadow: 0 0 10px rgb(255, 255, 255);
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translate(0, 0);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(-300px, 300px);
+                opacity: 0;
+            }
+        }
+
+        .sun {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 80px;
+            height: 80px;
+            transform: translate(-50%, -50%);
+        }
+
+        .orbit {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border: 1px dashed rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            animation: rotate linear infinite;
+        }
+
+        .planet {
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            transform: translate(-50%, -50%);
+        }
+        @keyframes rotate {
+            from { transform: translate(-50%, -50%) rotate(0deg); }
+            to { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+    </style>
+    </head>
+    <body>
+        <h1>What is solar system?</h1>
+        <p>The Solar System is a vast and fascinating cosmic neighborhood that includes the Sun, eight planets, their moons, dwarf planets, asteroids, comets, and countless smaller objects. It is part of the Milky Way Galaxy and formed about <b>4.6 billion years</b> ago from a cloud of gas and dust.</p>
+        <img src="https://image2url.com/r2/default/images/1774092437611-041e306a-6989-4d8f-a455-8a97ac5fb126.jpg" alt="image 1" />
+        <h2>The center of Everything</h2>
+        <p>At the heart of the Solar System lies the Sun, a massive ball of hot gases mainly made of hydrogen and helium. It contains about<b> 99.8% of the total mass</b> of the Solar System.</p>
+        <p>The sun provides</p>
+        <ol>
+            <li>Light</li>
+            <li>Heat</li>
+            <li>Gravity</li>
+        </ol>
+        <p> The Sun, a massive, glowing ball of hot gases, sits at the center of our Solar System and serves as the primary source of energy for life on Earth. It is a star, specifically a yellow dwarf, about 4.6 billion years old, with a diameter of roughly 1.39 million kilometers and located approximately 150 million kilometers from Earth. The Sun is composed mostly of hydrogen (around 75%) and helium (around 24%). Structurally, the Sun has several layers: at its core, the hottest part at about 15 million °C, nuclear fusion converts hydrogen into helium, releasing enormous amounts of energy. Surrounding the core is the radiative zone, where energy slowly moves outward, and the convective zone, where hot gases rise and cooler gases sink. The photosphere is the visible surface, above which lies the thin red chromosphere, and the outermost corona extends far into space and is extremely hot.
+The Sun produces energy through nuclear fusion, a process in which hydrogen atoms combine to form helium, releasing immense heat and light that sustain life on Earth. This energy powers photosynthesis in plants, controls Earth’s temperature, drives weather and climate, and, through its gravity, keeps the planets in orbit. The Sun also exhibits fascinating phenomena such as sunspots, dark and cooler areas on its surface, solar flares, powerful bursts of energy, and solar wind, a stream of charged particles that can influence satellites and communications on Earth. Containing 99.8% of the Solar System’s mass, the Sun appears yellow from Earth but is actually white, and its light takes about eight minutes to reach us. In essence, the Sun is the heart of the Solar System, vital for light, heat, and life, while maintaining the delicate balance of our cosmic neighborhood.</p>
+        <img src="https://image2url.com/r2/default/images/1774099165918-c8951e7b-fe9a-4c91-ae8b-f5f55ee6f8fb.jfif" alt="image" />
+        <h2>Planets</h2>
+        <p>There are total eight planets in solar system</p>
+        <ol>
+            <li>Mercury</li>
+            <li>Venus</li>
+            <li>Earth</li>
+            <li>Mars</li>
+            <li>Jupiter</li>
+            <li>Saturn</li>
+            <li>Uranus</li>
+            <li>Neptune</li>
+        </ol>
+        <img src="https://image2url.com/r2/default/images/1774092360473-7c892337-6ba9-4a84-9b16-67d904af2472.jfif" alt="image" />
+        <h3>Mercury</h3>
+        <p><b>Properties</b></p>
+        <ul>
+            <li><b>Position:</b>1st From the sun</li>
+            <li><b>Type:</b>Rocky</li>
+            <li><b>Special Features:</b>Smallest and fastest planet</li>
+            <li><b>Surface:</b>Very hot in the day and cold at night</li>
+            <li><b>Moons:</b>0</li>
+            <li><b>Fun Fact:</b>A year on mercury is <b>88 Earth days</b></li>
+        </ul>
+        <p>Mercury is the closest planet to the Sun and the smallest in the Solar System. It has a rocky surface covered with craters, cliffs, and plains, making it look somewhat like our Moon. Because it is so close to the Sun, Mercury experiences extreme temperatures, soaring up to 430°C (806°F) during the day and dropping to -180°C (-292°F) at night. It has almost no atmosphere to retain heat, which causes these huge temperature swings. Mercury completes an orbit around the Sun in just 88 Earth days, making it the fastest-moving planet, but it rotates slowly on its axis, taking about 59 Earth days to complete one rotation. Despite its small size, Mercury has a large iron core, which generates a weak magnetic field. Due to its proximity to the Sun and lack of thick atmosphere, Mercury appears bright in the sky but is challenging to observe from Earth without a telescope.</p>
+        <img src="https://image2url.com/r2/default/images/1774099232902-2ee67980-4232-4290-9fe3-c70a96a4f370.jfif" alt="image" />
+        <h3> Venus</h3>
+        <p><b>Properties</b></p>
+        <ul>
+            <li><b>Position:</b>2nd</li>
+            <li><b>Type:</b>Rocky</li>
+            <li><b>Special Features:</b>Hotest planet due to thick CO₂ atmosphere</li>
+            <li><b>Surface:</b>Covered with volcanoes</li>
+            <li><b>Moons:</b>0</li>
+            <li><b>Fun Fact:</b>Spins backwards compared to most planets </li>
+        </ul>
+        <p>Venus is the second planet from the Sun and is often called Earth’s “twin” because of its similar size and mass. However, its surface and atmosphere are drastically different. Venus is covered with thick clouds of carbon dioxide and sulfuric acid, creating a runaway greenhouse effect that makes it the hottest planet in the Solar System, with surface temperatures reaching around 465°C (869°F). Its atmosphere is dense and poisonous, and the pressure at the surface is about 92 times that of Earth. Venus rotates very slowly and in the opposite direction to most planets, meaning the Sun rises in the west and sets in the east. A single day on Venus lasts about 243 Earth days, while it takes only 225 Earth days to orbit the Sun. The planet’s surface is rocky, with vast plains, volcanoes, and highland regions. Venus shines brightly in the sky, making it visible as the “Morning Star” or “Evening Star,” and its beauty hides its harsh, inhospitable conditions.</p>
+        <img src="https://image2url.com/r2/default/images/1774099278564-a0f6cffe-263b-4075-9637-70fb60971d51.jfif" alt="image" />
+        <h3>Earth</h3>
+        <p><b>Properties</b></p>
+        <ul>
+            <li><b>Position:</b>3rd</li>
+            <li><b>Type:</b>Rocky</li>
+            <li><b>Special Features:</b>Only known planet for life</li>
+            <li><b>Surface:</b>71% water</li>
+            <li><b>Moons:</b>1</li>
+            <li><b>Fun Fact:</b>Perfect distance from the Sun for life (Habitable Zone) </li>
+        </ul>
+        <p>Earth is the third planet from the Sun and the only known planet to support life. It has a unique atmosphere rich in oxygen and a surface covered with oceans, continents, mountains, and valleys. Earth rotates once every 24 hours, creating day and night, and takes 365.25 days to orbit the Sun, which forms the basis of our year. Its magnetic field protects us from harmful solar radiation, and its water cycle drives weather, climate, and ecosystems. Earth’s diverse environments make it home to millions of species, including humans, and it remains the central focus of our exploration of the Solar System.</p>
+        <img src="https://image2url.com/r2/default/images/1774099319575-64c3afd9-eb67-46de-a665-3336fff4adbe.jfif" alt="image" />
+        <h3>Mars</h3>
+        <p><b>Properties</b></p>
+        <ul>
+            <li><b>Position:</b>4th</li>
+            <li><b>Type:</b>Rocky</li>
+            <li><b>Special Features:</b>Red color due to iron oxide (rust) </li>
+            <li><b>Surface:</b>Mountains, valleys, and possible past water</li>
+            <li><b>Moons:</b>2 (Phobos & Deimos) </li>
+            <li><b>Fun Fact:</b>Home to the largest volcano in the Solar System</li>
+        </ul>
+        <p>Mars is the fourth planet from the Sun, known for its reddish appearance caused by iron oxide on its surface. It has deserts, volcanoes, canyons, and polar ice caps, and scientists believe it may have had liquid water in the past. Mars has a thin atmosphere, mostly carbon dioxide, leading to cold temperatures averaging around -60°C (-76°F). A day on Mars, called a sol, lasts about 24.6 hours, and it takes 687 Earth days to orbit the Sun. Mars is a key focus for exploration because of its potential to support past or future life and human missions.</p>
+        <img src="https://image2url.com/r2/default/images/1774099357392-972917f0-18f5-4640-bc3d-41496f5e6f8c.jfif" alt="image" />
+        <h3>Jupiter</h3>
+        <p><b>Properties</b></p>
+        <ul>
+            <li><b>Position:</b>5th</li>
+            <li><b>Type:</b>Gas giant</li>
+            <li><b>Special Features:</b>Biggest planet</li>
+            <li><b>Storm:</b>great red spot (giant storm)</li>
+            <li><b>Moons:</b>90+</li>
+            <li><b>Fun Fact:</b>So big that all planets could fit inside it! </li>
+        </ul>
+        <p>Jupiter is the largest planet in the Solar System, fifth from the Sun, and a massive gas giant made mostly of hydrogen and helium. It has a strong magnetic field, dozens of moons, and is famous for its Great Red Spot, a giant storm larger than Earth. Jupiter’s rapid rotation—about 10 hours per day—causes a noticeable flattening at the poles. Its strong gravity helps shape the Solar System by affecting the orbits of asteroids and comets.</p>
+        <img src="https://image2url.com/r2/default/images/1774099398076-b06a90b3-1168-4d13-8abf-966e01819200.jfif" alt="image" />
+        <h3>Saturn</h3>
+        <p><b>Properties</b></p>
+        <ul>
+            <li><b>Position:</b>6th</li>
+            <li><b>Type:</b>Gas giant</li>
+            <li><b>Special Features:</b>Beautiful rings made of ice and rock </li>
+            <li><b>Surface:</b>Gas giant</li>
+            <li><b>Moons:</b>80+</li>
+            <li><b>Fun Fact:</b>It can float in water due to low density (theoretically)</li>
+        </ul>
+                <p>Saturn is the sixth planet from the Sun and is most famous for its stunning system of rings made of ice, rock, and dust. Like Jupiter, it is a gas giant composed mainly of hydrogen and helium. Saturn has more than 80 moons, with Titan being the largest, and rotates quickly, completing a day in just over 10 hours. Its low density means it could float in water if a giant enough pool existed! Saturn’s rings and moons make it one of the most visually spectacular planets in the Solar System</p>
+        <img src="https://image2url.com/r2/default/images/1774099443308-96168fb8-6c8f-497e-b9e3-640fd2aeaf59.jfif" alt="image" />
+        <h3>Uranus</h3>
+        <p><b>Properties</b></p>
+        <ul>
+            <li><b>Position:</b>7th</li>
+            <li><b>Type:</b>Ice giant</li>
+            <li><b>Special Features:</b>Rotates on its side (tilted ~98°) </li>
+            <li><b>Surface:</b>Gas giant</li>
+            <li><b>color:</b> Blue-green due to methane gas </li>
+            <li><b>Moons:</b>25+</li>
+            <li><b>Fun Fact:</b> One season lasts about 21 Earth years </li>
+        </ul>
+        <p>Uranus is the seventh planet from the Sun and is an ice giant composed mainly of hydrogen, helium, and icy compounds like water, ammonia, and methane. Its blue-green color comes from methane in the atmosphere. Uranus rotates on its side, with an axial tilt of about 98°, making its seasons extreme. A day on Uranus lasts about 17 hours, but a single orbit around the Sun takes 84 Earth years. Uranus has faint rings and 27 known moons, making it a fascinating, though distant, world.</p>
+        <img src="https://image2url.com/r2/default/images/1774099499852-061e4c8a-cb0c-46ef-bca0-5f8a68e3974d.jfif" alt="image" />
+        <h3>Neptune</h3>
+        <p><b>Properties</b></p>
+        <ul>
+            <li><b>Position:</b>8th</li>
+            <li><b>Type:</b>Ice giant</li>
+            <li><b>Special Features:</b>Strongest winds in the Solar System</li>
+            <li><b>Surface:</b>Gas giant</li>
+            <li><b>Moons:</b>14+</li>
+            <li><b>Fun Fact:</b>A year on Neptune = 165 Earth years</li>
+            <li><b>color:</b>Deep blue</li>
+        </ul>
+        <p>Neptune is the eighth planet from the Sun and the farthest known in our Solar System. It is another ice giant, similar in composition to Uranus, with a deep blue color due to methane in its atmosphere. Neptune experiences the strongest winds in the Solar System, reaching speeds over 2,000 km/h (1,200 mph). A day on Neptune lasts about 16 hours, and it takes 165 Earth years to complete one orbit around the Sun. Neptune has 14 known moons, with Triton being the largest, and faint rings that make it a mysterious and dynamic planet.</p>
+        <img src="https://image2url.com/r2/default/images/1774099542145-5269c0ce-9d97-4785-bb3e-634232069915.jfif" alt="image" />
+        <h2>Summary Table (Quick view)</h2>
+        <table>
+            <tr>
+                <th>Planet</th>
+                 <td>Mercury</td>
+                <td>Venus</td>
+                <td>Earth</td>
+                <td>Mars</td>
+                <td>jupiter</td>
+                <td>Saturn</td>
+                <td>Uranus</td>
+                <td>Neptune</td>
+            </tr>
+            <tr>                
+                <th>Moons</th>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>90+</td>
+                <td>80+</td>
+                <td>25+</td>
+                <td>14+</td> 
+                </tr>  
+            <tr>
+                <th>Type</th>
+                <td>Rocky</td>
+                <td>Rocky</td>
+                <td>Rocky</td>
+                <td>Rocky</td>
+                <td>Gas giant</td>
+                <td>Gas giant</td>
+                <td>Gas giant</td>
+                <td>Gas giant</td>
+            </tr>
+            <tr>
+                <th>Key features</th>
+                <td>Closest to Sun</td>
+                <td>Hottest planet</td>
+                <td>Life exists</td>
+                <td>Red planet</td>
+                <td>Largest planet</td>
+                <td>Rings</td>
+                <td>Tilted sideways</td>
+                <td>Strong winds</td>
+            </tr>    
+        </table>
+        <h3>Main groups of planets </h3>
+        <p> As there are 8 planets and divided into two main groups</p>
+        <ul>
+            <li>Inner planets</li>
+            <li>Outer planets </li>
+        </ul>
+        <h3> Inner planets</h3>
+        <p>These planets are close to the Sun and have solid surfaces:</p>
+        <ol>
+            <li>Mercury: Smallest and fastest planet </li>
+            <li>Venus: Hottest planet due to thick atmosphere </li>
+            <li>Earth: The only known planet with life  </li>
+            <li>Mars: Known as the Red Planet </li>
+        </ol>
+        <h3>Outer planets</h3>
+        <p>These are much larger and mostly made of gases:</p>
+        <ol>
+            <li>Jupiter: The biggest planet with a Great Red Spot </li>
+            <li>Saturn: Famous for its beautiful rings </li>
+            <li>Uranus: Rotates on its side </li>
+            <li>Neptune: Known for strong winds </li>
+        </ol>
+        <h3>Moons (Natural Satellites)</h3>
+        <p>Many planets have moons orbiting them. For example:</p>
+        <ul>
+            <li> Earth has 1 moon </li>
+            <li>Jupiter has over 90 moons</li>
+        </ul>
+        <p>The Moon is Earth’s only natural satellite and the fifth largest moon in the Solar System. It orbits Earth at an average distance of about 384,400 km (238,855 miles) and takes roughly 27.3 days to complete one orbit, which is also the length of its rotation. This is why we always see the same side, called the near side, while the far side remains hidden. The Moon’s surface is rocky and covered with craters, mountains, and dark plains called maria, formed by ancient volcanic activity. Without a significant atmosphere, temperatures on the Moon swing from scorching 127°C (260°F) in sunlight to freezing -173°C (-280°F) in darkness. Its gravity affects Earth’s tides and stabilizes our planet’s tilt, helping maintain a steady climate. Humans first visited the Moon during NASA’s Apollo 11 mission in 1969, making it a symbol of exploration and curiosity. The Moon continues to inspire science, culture, and imagination across the world.Moons vary in size and shape and can even have atmospheres or underground oceans.</p>
+        <img src="https://pub-1407f82391df4ab1951418d04be76914.r2.dev/uploads/c8a8e92a-dd2f-4e3f-a2b5-91e2645f3e2e.jfif">
+        <h3>Dwarf Planets</h3>
+        <p>These are smaller than planets and do not clear their orbit. The most famous is:</p>
+        <ol>
+            <li>Pluto</li>
+        </ol>
+        <p>Dwarf planets are small celestial bodies that orbit the Sun but are not large enough to clear their orbit of other debris, unlike regular planets. They share many characteristics with planets, such as being roughly spherical, but they are smaller and often located in the outer reaches of the Solar System. The most famous dwarf planet is Pluto, once considered the ninth planet, which has a rocky core and icy surface. Other notable dwarf planets include Eris, Haumea, Makemake, and Ceres—the only dwarf planet located in the asteroid belt between Mars and Jupiter. These distant worlds have unique features: some have moons, some rotate unusually, and many are covered in ice or frozen gases. Studying dwarf planets helps scientists understand the formation and evolution of the Solar System and the variety of objects orbiting the Sun.</p>
+        <img src="https://pub-1407f82391df4ab1951418d04be76914.r2.dev/uploads/5bb74f89-7f67-4671-a046-107a37690170.jfif">
+        <h3>Asteroids</h3>
+        <p>Rocky objects mostly found in the Asteroid Belt between Mars and Jupiter.Asteroids are rocky or metallic objects that orbit the Sun, mostly found in the asteroid belt between Mars and Jupiter. They vary in size from a few meters to hundreds of kilometers and usually have irregular shapes because their gravity is too weak to make them round. Asteroids are made mostly of rock, metal, or a mix of both. Some of the most well-known asteroids are Ceres, Vesta, and Pallas. Unlike comets, asteroids do not have tails or comas and are generally not very bright.</p>
+        <img src="https://pub-1407f82391df4ab1951418d04be76914.r2.dev/uploads/cee2a13a-51d7-45c3-816a-ec6ad194923f.jfif">
+        <h3> Comets</h3>
+        <p>Made of ice and dust. When they come near the Sun, they form a glowing tail.Comets are icy bodies composed of dust, rock, and frozen gases. They follow elongated orbits around the Sun, and when they get close to it, the Sun’s heat causes the ice to vaporize, creating a glowing coma (a cloud of gas and dust) and often a tail. The tail always points away from the Sun because of the solar wind. Famous comets include Halley’s Comet, Hale-Bopp, and NEOWISE. Comets are often called “dirty snowballs” because of their icy and dusty composition.</p>
+        <img src="https://pub-1407f82391df4ab1951418d04be76914.r2.dev/uploads/ec91807b-7c5e-420d-bc79-65c4c4e5c261.jfif">
+        <h3>Meteoroids</h3>
+        <p>Small particles that burn up in Earth’s atmosphere, creating shooting stars.Meteoroids are small space rocks, usually smaller than a meter. When a meteoroid enters Earth’s atmosphere, it burns up, producing a bright streak of light called a meteor, also known as a “shooting star.” If a meteoroid survives its passage through the atmosphere and lands on Earth, it is called a meteorite. Meteorites can be rocky, metallic, or a combination of both. A famous example is the Hoba Meteorite in Namibia, which is the largest known meteorite.</p>
+        <img src="https://pub-1407f82391df4ab1951418d04be76914.r2.dev/uploads/ad81c206-3d59-4da0-8141-119f15689a9e.jfif">
+        <h3>Quick comparison table</h3>
+        <table>
+            <tr>
+                <th>Feature</th>
+                <td>Size</td>
+                <td>Composition</td>
+                <td>orbit</td>
+                <td>Visibility</td>
+                <td>Example</td>
+            </tr> 
+            <tr>
+                <th>Asteroids</th>
+                <td>meters–hundreds km</td>
+                <td>Rock/Metal</td>
+                <td>Mostly between Mars & Jupiter</td>
+                <td>Usually not bright</td>
+                <td>Ceres, Vesta</td>
+            </tr> 
+            <tr>
+                <th>Comet</th>
+                <td>meters–tens of km</td>
+                <td>Ice, dust, rock</td>
+                <td>Elliptical, Sun-centered</td>
+                <td>Bright when near Sun (coma + tail)</td>
+                <td>Halley’s Comet</td>
+            </tr>
+            <tr>
+                <th>Meteroids</th>
+                <td>millimeters–meters</td>
+                <td>Rock/Metal</td>
+                <td>Anywhere in space</td>
+                <td>Meteor = streak of light; Meteorite = on Earth</td>
+                <td>Chelyabinsk meteorite</td>
+            </tr>          
+        </table>
+        <h3>Black hole</h3>
+        <p>A black hole is a region in space where gravity is so strong that nothing, not even light, can escape its pull. They are formed when massive stars collapse under their own gravity at the end of their life cycle. The boundary surrounding a black hole is called the event horizon, beyond which nothing can return. Black holes can vary in size, from stellar-mass black holes a few times the mass of the Sun to supermassive black holes millions or billions of times more massive, often found at the centers of galaxies. Despite being invisible, their presence can be detected by observing the motion of nearby stars or gas being pulled into them, which often emits intense radiation. Black holes are mysterious and fascinating objects that challenge our understanding of physics, space, and time.</p>
+         <img src="https://image2url.com/r2/default/images/1774164845781-5ae8dff5-7bd9-4d4f-82ef-084acc807d2b.jpg">
+        <h3>Structure of solar system</h3>
+        <p>The Solar System has different regions:</p>
+        <ul>
+            <li>Inner planets region </li>
+            <li>Asteroid Belt </li>
+            <li>Outer planets region </li>
+            <li>Kuiper Belt (where Pluto is located) </li>
+            <li>Oort Cloud (a distant spherical shell of icy objects) </li>
+        </ul>
+        <h3> Importance of the Solar System</h3>
+        <p>The Solar System helps us understand:</p>
+        <ul>
+            <li>The origin of Earth and life </li>
+            <li>Planetary motion and gravity </li>
+            <li>Space exploration and future possibilities</li>
+        </ul>
+        <h3> Space Exploration</h3>
+        <p>Humans have explored the Solar System using spacecraft like:</p>
+        <ul>
+            <li>Apollo 11 </li>
+            <li>Voyager 1 </li>
+        </ul>
+        <h4> Apollo 11 and voyager pics</h4>
+        <img src="https://pub-1407f82391df4ab1951418d04be76914.r2.dev/uploads/b59312ae-7576-435a-a51b-a1417ccabf0f.jfif">
+        <img src="https://pub-1407f82391df4ab1951418d04be76914.r2.dev/uploads/49aac0a5-78c9-4718-97ff-a9ca1a047038.jfif">
+        <p>These missions provide valuable information about planets and space.</p>
+        <img src="https://image2url.com/r2/default/images/1774092259655-ce8742aa-eef0-4ee8-8b1d-5ae2d1c2878b.jfif" alt="image" />
+        <h1>3d animation of solar system</h1>
+       <div class="solar-system">
+        
+    <!-- 🌟 Stars -->
+    <div class="stars" id="stars"></div>
+
+    <!-- ☄️ Meteoroids -->
+    <div class="meteor" style="top:10%; left:90%; animation-duration:3s;"></div>
+    <div class="meteor" style="top:30%; left:100%; animation-duration:5s;"></div>
+    <div class="meteor" style="top:60%; left:95%; animation-duration:4s;"></div>
+
+    <!-- ☀️ Sun -->
+    <img class="sun" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Solar_sys8.jpg">
+
+    <!-- Mercury -->
+    <div class="orbit" style="width:120px;height:120px;animation-duration:5s;">
+        <img class="planet" src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Mercury_in_true_color.jpg" width="20">
+    </div>
+
+    <!-- Venus -->
+    <div class="orbit" style="width:170px;height:170px;animation-duration:8s;">
+        <img class="planet" src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Venus-real_color.jpg" width="25">
+    </div>
+
+    <!-- Earth -->
+    <div class="orbit" style="width:230px;height:230px;animation-duration:10s;">
+        <img class="planet" src="https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg" width="28">
+    </div>
+
+    <!-- Mars -->
+    <div class="orbit" style="width:290px;height:290px;animation-duration:14s;">
+        <img class="planet" src="https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg" width="24">
+    </div>
+
+    <!-- Jupiter -->
+    <div class="orbit" style="width:360px;height:360px;animation-duration:20s;">
+        <img class="planet" src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Jupiter.jpg" width="40">
+    </div>
+
+    <!-- Saturn -->
+    <div class="orbit" style="width:440px;height:440px;animation-duration:25s;">
+        <img class="planet" src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Saturn_during_Equinox.jpg" width="38">
+    </div>
+
+    <!-- Uranus -->
+    <div class="orbit" style="width:520px;height:520px;animation-duration:30s;">
+        <img class="planet" src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Uranus2.jpg" width="32">
+    </div>
+
+    <!-- Neptune -->
+    <div class="orbit" style="width:600px;height:600px;animation-duration:35s;">
+        <img class="planet" src="https://upload.wikimedia.org/wikipedia/commons/5/56/Neptune_Full.jpg" width="32">
+    </div>
+
+</div>
+
+<!-- ⭐ Star Generator Script -->
+<script>
+    const starsContainer = document.getElementById("stars");
+
+    for (let i = 0; i < 250; i++) {
+        let star = document.createElement("div");
+        star.classList.add("star");
+
+        let size = Math.random() * 3;
+        star.style.width = size + "px";
+        star.style.height = size + "px";
+
+        star.style.top = Math.random() * 100 + "%";
+        star.style.left = Math.random() * 100 + "%";
+
+        star.style.animationDuration = (Math.random() * 3 + 1) + "s";
+
+        starsContainer.appendChild(star);
+    }
+</script>
+    </body>
+</html>
